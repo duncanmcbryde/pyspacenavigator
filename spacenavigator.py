@@ -432,7 +432,7 @@ def set_led(state):
 
 
 if __name__ == "__main__":
-    d = device_specs["SpaceNavigator"]
+    d = device_specs["SpaceMouse Compact"]
     print("Devices found:\n\t%s" % "\n\t".join(list_devices()))
     dev = open(callback=print_state, button_callback=toggle_led)
     print(dev.describe_connection())
