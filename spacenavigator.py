@@ -11,21 +11,6 @@ __version__ = "0.2.2"
 # clock for timing
 high_acc_clock = timeit.default_timer
 
-GENERIC_PAGE = 0x1
-BUTTON_PAGE = 0x9
-LED_PAGE = 0x8
-MULTI_AXIS_CONTROLLER_CAP = 0x8
-
-HID_AXIS_MAP = {
-    0x30: "x",
-    0x31: "y",
-    0x32: "z",
-    0x33: "roll",
-    0x34: "pitch",
-    0x35: "yaw",
-}
-
-import pprint
 
 # axis mappings are specified as:
 # [channel, byte1, byte2, scale]; scale is usually just -1 or 1 and multiplies the result by this value
